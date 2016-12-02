@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <title>Trump Quote Machine</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400,500)">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+</head>
+
+<body>
+
+    <div ng-controller="ctrl" class="container">
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <div class="row social_row jumbotron">
+                    <div class="container">
+                        <h2 align="center">Know more about the controversial Donald Trump!! </h2>
+                    <hr>
+                    <hr>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <!-- <h3 align="center">Know what they said</h2> -->
+                                <img class="img-responsive img-rounded" src="http://www.theweeklings.com/wp-content/uploads/trump-ugh.jpg" alt="Donald Trump" style="width:90 %"> <hr>
+                                <div class="caption">
+                                    <blockquote> <p><span> {{theySaid}} </span></p></blockquote>  
+                                </div>
+                                <div><button class="btn btn-lg btn-block" ng-click="theySaidFunc()">They said!!</button></div>
+                            </div>
+                    
+                            <div class="col-xs-6">
+                                <!-- <h3 align="center">Know what he said</h2> -->
+                                <img class="img-responsive img-rounded" src="http://s1.ibtimes.com/sites/www.ibtimes.com/files/2016/03/03/celebrities-hate-donald-trump.jpg" alt="Donald Trump" style="width:90 %"><hr>
+                                <div class="caption">
+                                    <blockquote><p><span> {{heSaid}} </span></p></blockquote>
+                                </div>
+                                <div><button class="btn btn-lg btn-block" ng-click="heSaidFunc()">He said!!</button></div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div> 
+            <div class="col-sm-1"></div> 
+        </div>
+        <div class="footer"> by <a href="https://tn.linkedin.com/in/walidrahali">Walidoc</a></div>
+    </div>
+
+    </div>
+  
+  <script src="app.js"></script>
+
+</body>
+</html>
